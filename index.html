@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GTA VI - Mi Página Web</title>
+
+    <style>
+        /* Diseño general */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1C1427;
+            color: white;
+        }
+
+        /* Menú */
+        header {
+            background-color: #2D1B3D;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h2 {
+            color: #FF73C6;
+            margin-top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #FF73C6;
+        }
+
+        /* Portada */
+        .portada {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(
+                135deg,
+                #52245F,
+                #C54891,
+                #F4A261
+            );
+        }
+
+        .portada h1 {
+            font-size: 40px;
+        }
+
+        .portada p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #FF73C6;
+            color: #25142D;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Secciones */
+        section {
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #FF73C6;
+        }
+
+        /* Tarjetas */
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .tarjeta {
+            background-color: #2D1B3D;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            border: 1px solid #68416D;
+        }
+
+        .tarjeta h3 {
+            color: #FF9DD8;
+        }
+
+        .tarjeta p {
+            line-height: 1.6;
+            color: #E2D5EA;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #2D1B3D;
+            padding: 20px;
+            text-align: center;
+            color: #E2D5EA;
+        }
+
+        /* Adaptación para celulares */
+        @media (max-width: 600px) {
+            .portada h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .tarjeta {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado y menú -->
+    <header>
+        <h2>GTA VI</h2>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#personajes">Personajes</a>
+            <a href="#juego">El juego</a>
+        </nav>
+    </header>
+
+    <!-- Portada principal -->
+    <main>
+        <div class="portada" id="inicio">
+            <h1>GRAND THEFT AUTO VI</h1>
+
+            <p>
+                Bienvenido a Vice City, una ciudad llena
+                de aventuras, luces y nuevas historias.
+            </p>
+
+            <a href="#personajes" class="boton">
+                Conocer personajes
+            </a>
+        </div>
+
+        <!-- Personajes -->
+        <section id="personajes">
+            <h2>Personajes principales</h2>
+
+            <div class="contenedor">
+
+                <div class="tarjeta">
+                    <h3>Lucia</h3>
+
+                    <p>
+                        Una de las protagonistas de GTA VI.
+                        Su historia forma parte de una nueva
+                        aventura en Leonida.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Jason</h3>
+
+                    <p>
+                        Protagonista que comparte parte
+                        de su historia con Lucia en el
+                        mundo de Vice City.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Información del juego -->
+        <section id="juego">
+            <h2>Sobre el juego</h2>
+
+            <p>
+                Grand Theft Auto VI es un videojuego
+                de mundo abierto desarrollado por
+                Rockstar Games.
+            </p>
+
+            <p>
+                Su mundo está ambientado en Leonida,
+                una región ficticia inspirada en Florida.
+            </p>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Práctica de desarrollo web | HTML y CSS</p>
+        <p>Página representativa, no oficial de GTA VI</p>
+    </footer>
+
+</body>
+</html>
